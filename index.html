@@ -73,8 +73,10 @@
               <input type="number" name="cpf" />
             </div>
             <div class="form-genre">
-              <input type="radio" name="genre" />Masculino
-              <input class="female" type="radio" name="genre" />Feminino
+              <input type="radio" id="male" name="genre" />
+              <label for="male">Masculino</label>
+              <input id="female" type="radio" name="genre" />
+              <label for="female">Feminino</label>
             </div>
             <div class="form-button">
               <button>Enviar</button>
@@ -82,9 +84,48 @@
           </form>
         </div>
       </section>
+
+      <div class="lineDiv">
+        <div class="line"></div>
+        <h2>Sua seleção especial</h2>
+        <div class="line"></div>
+      </div>
+
+      <section class="products-cards">
+      </section>
+
+      <div class="more-products">
+        <button class="more">Ainda mais produtos aqui!</button>
+      </div>
+
+      <div class="lineDiv">
+        <div class="line"></div>
+        <h2>Compartilhe a novidade</h2>
+        <div class="line"></div>
+      </div>
+
+      <section>
+        <p class="fill-text">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+
+        <form class="share">
+          <div class="form-name friend-name">
+            <label for="name">Nome do seu amigo:</label>
+            <input type="text" name="name" />
+          </div>
+          <div class="form-email friend-email">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" />
+          </div>
+        </form>
+        <div class="form-button send-now">
+          <button>Enviar agora</button>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-      Testando suas habilidades em HTML, CSS e JS. <br/> Linx Impulse <br/>2019
+      <span style="margin-top: 10px;">Testando suas habilidades em HTML, CSS e JS. <br/> Linx Impulse <br/>2019</span> 
   </footer>
+  <script src="./scripts/script.js"></script>
 </body>
 </html>
+

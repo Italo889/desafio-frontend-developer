@@ -6,6 +6,7 @@
     --text-size: 1.2rem;
     --light-color: #fff;
     --dark-color: #2e183b;
+    --secondary-color: #f25725;
   }
   
   * {
@@ -54,7 +55,7 @@
     margin: 0 2rem;
     font-size: 1.4rem;
   
-    background: linear-gradient(45deg, #f25725, #ffad03);
+    background: linear-gradient(45deg, var(--secondary-color), #ffad03);
     width: 17rem;
     height: 4rem;
     text-align: center;
@@ -64,7 +65,7 @@
   }
   
   .nav-list li:hover {
-    background: linear-gradient(45deg, #f25725, #f25725);
+    background: linear-gradient(45deg, var(--secondary-color), var(--secondary-color));
     cursor: pointer;
   }
   
@@ -73,8 +74,11 @@
     color: #121212;
   
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
+
+  /* ======== Form ======== */
   
   .help-form {
     margin: auto;
@@ -132,6 +136,8 @@
   .form-cpf input {
     width: 34rem;
     height: 3rem;
+    padding-left: 1rem;
+    outline: none;
   }
   
   .form-genre {
@@ -162,14 +168,172 @@
   }
   
   .form-button button:hover {
-    background-color: #f25725;
+    background-color: var(--secondary-color);
     cursor: pointer;
   }
   
-  .female {
+  #female {
     margin-left: 2rem;
   }
   
+
+/* ========Line======== */
+
+.lineDiv {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.line {
+  width: 45rem;
+  height: .1rem;
+  background-color: #121212;
+}
+
+.lineDiv h2 {
+  margin: 0 1rem;
+}
+
+  
+
+/* ======= Products cards ======== */
+
+.products-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 30rem);
+  justify-content: center;
+
+  margin-bottom: 6rem;
+}
+
+  .card {
+    width: 20rem;
+    height: 35rem;
+    position: relative;
+
+    margin: 4rem;
+    cursor: pointer;
+  }
+  
+  .card-image {
+    width: 20rem;
+    height: 15rem;
+  }
+  
+  .product-name {
+    font-size: 1.4rem;
+    position: absolute;
+    bottom: 16rem;
+    left: 0rem;
+  }
+  
+  .product-description {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 11rem;
+    left: 0rem;
+  }
+  
+  .old-price {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 8rem;
+    left: 0rem;
+  }
+  
+  .price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5.7rem;
+    left: 0rem;
+  }
+  
+  .installments {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 4rem;
+    left: 0rem;
+  }
+  
+  .buy-button {
+    width: 20rem;
+    height: 3rem;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    border: none;
+    border-radius: .3rem;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    transition: all .3s;
+  }
+
+  .buy-button:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+  }
+
+  .more-products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .more {
+    border: none;
+    height: 4rem;
+    width: 26rem;
+
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    transition: .3s all;
+
+    margin-bottom: 8rem;
+  }
+
+  .more:hover {
+    background-color: var(--dark-color);
+    cursor: pointer;
+  }
+
+
+
+  /* ======== Share ============= */
+
+  .fill-text {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+  }
+
+  .share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .friend-name {
+    margin-right: 3rem;
+    margin: 0 3rem 0 0;
+  }
+
+  .friend-email {
+    margin: 0;
+  }
+
+  .send-now {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 7rem;
+  }
+
+
+  /* ======== Footer ============= */
 
   .footer {
     height: 29rem;
@@ -178,10 +342,8 @@
 
     clip-path: polygon(0% 30%, 0% 100%, 100% 100%, 100% 0%);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    display: grid;
+    align-content: center;
 
     color: white;
 
@@ -191,3 +353,10 @@
     font-size: 1.2rem;
 
 }
+
+
+@media (max-width: 420px){
+  header {
+    background-color: red;
+  }
+} 
