@@ -61,3 +61,10 @@ const productInfo = (info) => {
 }
 
 
+//More products
+moreProducts.addEventListener('click', ()=> {
+    fetch(url)
+    .then((res) => res.json())
+    .then((json) => productInfo(json.products));
+    currentPage++
+})
