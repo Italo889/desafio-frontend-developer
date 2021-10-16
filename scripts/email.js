@@ -1,9 +1,7 @@
 let section = document.querySelector('.products-cards')
 let moreProducts = document.querySelector('.more')
 
-let currentPage = 1
-const url = `https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${currentPage}`
-
+const url = `https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1`
 //Data request
 fetch(url)
     .then((res) => res.json())
@@ -14,7 +12,7 @@ fetch(url)
 //Creating cards and entering details
 const productInfo = (info) => {
 
-    for (let i = 0; i < info.length; i++) {
+    for (let i = 0; i < 2; i++) {
 
         const div = document.createElement('div')
         div.setAttribute('class', 'card')
@@ -59,7 +57,6 @@ const productInfo = (info) => {
 
     }
 }
-
 
 //More products
 moreProducts.addEventListener('click', () => {

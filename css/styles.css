@@ -472,8 +472,8 @@
 
 .product-name {
   grid-area: name;
-  position: static;
   margin: 0 0 -.5rem 0;
+  position: static;
 }
 
 .product-description {
@@ -482,26 +482,26 @@
 
 .old-price {
   grid-area: oldprice;
-  position: static;
   margin-bottom: -1rem;
+  position: static;
 }
 
 .price {
   grid-area: price;
-  position: static;
   margin-bottom: -1rem;
+  position: static;
 }
 
 .installments {
   grid-area: installments;
-  position: static;
   margin-bottom: .5rem;
+  position: static;
 }
 
 .buy-button {
   grid-area: button;
-  position: static;
   width: 18rem;
+  position: static;
 }
 
 /* ======== Share ============= */

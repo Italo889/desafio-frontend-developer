@@ -1,0 +1,32 @@
+body {
+    max-width: 60rem;
+    margin: auto;
+}
+
+section {
+    margin: auto;
+}
+
+.messageDiv {
+    max-width: 90%;
+    margin: auto;
+
+}
+
+.hello {
+    font-size: 2rem;
+    display: flex;
+    justify-self: flex-start;
+}
+
+.offer-message {
+    font-size: 1.2rem;
+}
+
+.products-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
