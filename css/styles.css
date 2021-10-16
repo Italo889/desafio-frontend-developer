@@ -27,6 +27,7 @@
   
     color: var(--light-color);
     clip-path: polygon(0% 0%, 0% 80%, 100% 100%, 100% 0%);
+
   }
   
   h2 {
@@ -354,7 +355,7 @@
 
 }
 
-
+  /* ======== Responsiveness ============= */
 @media (max-width: 420px){
   header {
     align-items: flex-start;
@@ -366,7 +367,7 @@
     margin-left: 1.6rem;
     max-width: 90%;
   }
-  
+
   .nav-list {
     
     display: grid;
@@ -374,7 +375,7 @@
     gap: 4rem;
     justify-content: center;
   }
-  
+
  
   main {
     max-width: 42rem;

@@ -58,7 +58,7 @@
         </p>
       </div>
       <div class="form">
-        <form>
+        <form onsubmit="isValidCPF()">
           <div class="form-name">
             <label for="name">Seu nome:</label>
             <input type="text" name="name" />
@@ -69,7 +69,7 @@
           </div>
           <div class="form-cpf">
             <label for="cpf-number">CPF:</label>
-            <input type="number" name="cpf-number" id="cpf" />
+            <input type="text" name="cpf-number" id="cpf" />
           </div>
           <div class="form-genre">
             <input type="radio" id="male" name="genre" />
@@ -78,7 +78,7 @@
             <label for="female">Feminino</label>
           </div>
           <div class="form-button">
-            <button>Enviar</button>
+            <button type="submit">Enviar</button>
           </div>
         </form>
       </div>
